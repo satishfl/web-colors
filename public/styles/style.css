@@ -24,3 +24,11 @@
   padding-left: 10px;
   line-height: 100%;
 }
+
+nav{
+  font-family: "arial";
+}
+
+body{
+  background-color: #bbb;
+}

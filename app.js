@@ -29,27 +29,31 @@ app.get( '/colors', (req, res, next) => {
   );
 });
 
+app.get( '/pink', (req, res, next) => {
+  res.render('pink-view.ejs',
+    {colors: colorsList}
+  );
+});
+
+app.get( '/purple', (req, res, next) => {
+  res.render('purple-view.ejs',
+    {colors: colorsList}
+  );
+});
+
+app.get( '/blue', (req, res, next) => {
+  res.render('blue-view.ejs',
+    {colors: colorsList}
+  );
+});
+
+app.get( '/random', (req, res, next) => {
+  res.render('random-view.ejs',
+    {colors: colorsList}
+  );
+});
+
 app.listen(3000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

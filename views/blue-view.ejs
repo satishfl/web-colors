@@ -1,0 +1,19 @@
+<h2> Pink Colors </h2>
+
+
+
+     <% colors.forEach((oneColor) => { %>
+
+      <%if (oneColor.category == "blue") { %>
+       <div class="square-holder">
+         <div class="square" style="background-color: <%= oneColor.hex %>;"> </div>
+           <div class="my-text">
+             <p><%= oneColor.keyword %></p>
+             <p><%= oneColor.hex %>
+             <%= oneColor.category %></p>
+           </div>
+       </div>
+    <% }%>
+
+
+     <% }) %>
