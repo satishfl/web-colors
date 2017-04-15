@@ -1,1 +1,26 @@
-.body{background-color: black}
+
+.square-holder {
+   /*border: 1px solid #aaa;*/
+   display: inline-block;
+   vertical-align: top;
+   width: 285px;
+
+}
+
+.square {
+   /*background: #bbb;*/
+   letter-spacing: 0;
+   width: 100%;
+   height: 200px;
+   margin: 10px;
+   display: inline-block;
+   vertical-align: top;
+   bottom: 0px;
+}
+
+.my-text{
+  font-family: "arial";
+  font-size: 14px;
+  padding-left: 10px;
+  line-height: 100%;
+}

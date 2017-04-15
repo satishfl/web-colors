@@ -19,11 +19,15 @@ app.set('layout', 'layouts/main-layout.ejs');
 
 //routes
 app.get( '/', (req, res, next) => {
-
   //render views/home-view.ejs
   res.render('home-view.ejs');
-
 } );
+
+app.get( '/colors', (req, res, next) => {
+  res.render('colors-view.ejs',
+    {colors: colorsList}
+  );
+});
 
 app.listen(3000);
 
@@ -50,7 +54,7 @@ app.listen(3000);
 
 
 
-const colors = [
+const colorsList = [
   { keyword: 'black',                hex: '#000000', category: 'grayscale' },
   { keyword: 'silver',               hex: '#c0c0c0', category: 'grayscale' },
   { keyword: 'gray',                 hex: '#808080', category: 'grayscale' },
